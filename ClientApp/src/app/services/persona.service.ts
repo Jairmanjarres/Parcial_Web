@@ -10,7 +10,9 @@ export class PersonaService {
 
   get(): Persona[] {
     return JSON.parse(localStorage.getItem('datos'));
+    
   }
+  
 
 
   post(persona: Persona) {
@@ -20,5 +22,8 @@ export class PersonaService {
     }
     personas.push(persona);
     localStorage.setItem('datos', JSON.stringify(personas));
+    
+      localStorage.clear();
+    
   }
 }

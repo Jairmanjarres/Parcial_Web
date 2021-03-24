@@ -26,6 +26,7 @@ import { ReservacionaConsultaComponent } from './parcial/reservaciona-consulta/r
     FetchDataComponent,
     ReservacionaConsultaComponent,
     PersonaRegistroComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
